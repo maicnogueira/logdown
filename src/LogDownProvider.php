@@ -1,6 +1,6 @@
 <?php
 
-namespace MaicNogueira\Logdown\Providers;
+namespace MaicNogueira\Logdown;
 
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
@@ -22,6 +22,6 @@ class LogDownProvider extends ServiceProvider implements DeferrableProvider
 
         Route::get('/logdown/list', function () {
             return 'Olá, mundo!';
-        });
+        })->middleware('web');
     }
 }

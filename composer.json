@@ -26,10 +26,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "MaicNogueira\\Logdown\\Providers\\LogDownProvider"
+        "MaicNogueira\\Logdown\\LogDownProvider"
       ],
       "aliases": {
-        "LogDown": "MaicNogueira\\Logdown\\Providers\\LogDownProvider"
+        "LogDown": "MaicNogueira\\Logdown\\LogDownProvider"
       }
     }
   }
