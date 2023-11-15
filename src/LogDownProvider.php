@@ -10,26 +10,15 @@ class LogDownProvider extends ServiceProvider implements DeferrableProvider
 {
     public function boot()
     {
-//        $router = $this->app->make(Router::class);
 
-//        Route::get('/logdown/list', function () {
-//            return 'Olá, mundo!';
-//        })->middleware('web');
-        $this->loadRoutesFrom(__DIR__."/routes/web.php");
-
-        $this->publishes([
-            __DIR__.'/../config/logdown.php' => config_path('logdown.php'),
-        ]);
     }
 
     public function register()
     {
-//        $this->registerConfig();
-    }
+        Route::get('/meu-pacote', function () {
+            return 'Olá, mundo!';
+        });
 
-    protected function registerConfig()
-    {
-        $this->mergeConfigFrom(__DIR__.'/config/logdown.php', 'logdown');
     }
 
 
