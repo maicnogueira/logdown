@@ -1,11 +1,11 @@
 <?php
 
 namespace MaicNogueira\Logdown\Providers;
+use Illuminate\Support\ServiceProvider;
+use Illuminate\Routing\Router;
 
 class LogDownProvider
 {
-    use Illuminate\Support\ServiceProvider;
-    use Illuminate\Routing\Router;
 
     public function register()
     {
