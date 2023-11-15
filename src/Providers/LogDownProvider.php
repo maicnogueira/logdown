@@ -4,7 +4,7 @@ namespace MaicNogueira\Logdown\Providers;
 
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Routing\Router;
+use Illuminate\Support\Facades\Route;
 
 class LogDownProvider extends ServiceProvider implements DeferrableProvider
 {
@@ -20,7 +20,7 @@ class LogDownProvider extends ServiceProvider implements DeferrableProvider
     {
 //        $router = $this->app->make(Router::class);
 
-        Router::get('/logdown/list', function () {
+        Route::get('/logdown/list', function () {
             return 'Olá, mundo!';
         });
     }
