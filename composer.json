@@ -15,7 +15,7 @@
   },
   "autoload" : {
     "psr-4" : {
-      "MaicNogueira\\Logdown\\" :  "src/"
+      "maicnogueira\\Logdown\\" :  "src/"
     }
   },
   "scripts": {
@@ -26,7 +26,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "\\MaicNogueira\\Logdown\\LogDownProvider"
+        "maicnogueira\\Logdown\\LogDownProvider"
       ]
     }
   }
