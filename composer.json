@@ -17,5 +17,10 @@
     "psr-4" : {
       "MaicNogueira\\Logdown\\" :  "src/"
     }
+  },
+  "scripts": {
+    "post-install": [
+      "php artisan vendor:publish --provider=\"MaicNogueira\\Logdown\\LogDownProvider\""
+    ]
   }
 }
