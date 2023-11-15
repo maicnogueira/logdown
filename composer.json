@@ -18,11 +18,6 @@
       "maicnogueira\\Logdown\\" :  "src/"
     }
   },
-  "scripts": {
-    "post-install": [
-      "php artisan vendor:publish --provider=\"\\maicnogueira\\Logdown\\LogDownProvider\""
-    ]
-  },
   "extra": {
     "laravel": {
       "providers": [
