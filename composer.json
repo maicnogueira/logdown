@@ -20,13 +20,13 @@
   },
   "scripts": {
     "post-install": [
-      "php artisan vendor:publish --provider=\"\\Logdown\\LogDownProvider\""
+      "php artisan vendor:publish --provider=\"\\MaicNogueira\\Logdown\\LogDownProvider\""
     ]
   },
   "extra": {
     "laravel": {
       "providers": [
-        "MaicNogueira\\Logdown\\LogDownProvider"
+        "\\MaicNogueira\\Logdown\\LogDownProvider"
       ]
     }
   }
