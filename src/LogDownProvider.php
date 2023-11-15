@@ -10,6 +10,7 @@ class LogDownProvider extends ServiceProvider implements DeferrableProvider
 {
     public function boot()
     {
+        parent::boot();
 
         Route::get('/meu-pacote', function () {
             return 'Olá, mundo!';
