@@ -2,6 +2,7 @@
   "name": "maicnogueira/logdown",
   "description": "apenas mais uma forma de baixar logs do laravel",
   "minimum-stability": "stable",
+  "version": "0.0.1",
   "license": "proprietary",
   "authors": [
     {
@@ -10,6 +11,7 @@
     }
   ],
   "require": {
+    "php": "^7.4"
   },
   "autoload" : {
     "psr-4" : {
