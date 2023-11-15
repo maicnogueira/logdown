@@ -11,6 +11,10 @@ class LogDownProvider extends ServiceProvider implements DeferrableProvider
     public function boot()
     {
 
+        $this->app->singleton('logdown', function () {
+            return new LogDownProvider();
+        });
+
     }
 
     public function register()
