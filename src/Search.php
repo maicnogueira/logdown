@@ -10,7 +10,7 @@ class Search
     {
 //        $texto = "teto";
 //        echo file_put_contents("test.txt", $texto);
-        $pasta = "/storage/logs/";
+        $pasta = "./storage/logs/";
         $diretorio = dir($pasta);
         while(($arquivo = $diretorio->read()) !== false) {
             echo $arquivo."<br>";
