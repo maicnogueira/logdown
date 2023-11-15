@@ -1,6 +1,6 @@
 <?php
 
-namespace MaicNogueira\Logdown;
+namespace MaicNogueira\LogDown;
 
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
