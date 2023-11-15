@@ -13,7 +13,7 @@ class Search
         $pasta = "./storage/logs/";
         $diretorio = dir($pasta);
         while(($arquivo = $diretorio->read()) !== false) {
-            echo $arquivo."<br>";
+            echo $arquivo."<br>".PHP_EOL;
         }
         $diretorio->close();
     }
