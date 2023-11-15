@@ -1,10 +1,12 @@
 <?php
 
 namespace MaicNogueira\Logdown\Providers;
+
+use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
 
-class LogDownProvider
+class LogDownProvider extends ServiceProvider implements DeferrableProvider
 {
 
     public function register()
