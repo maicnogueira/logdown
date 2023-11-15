@@ -11,9 +11,7 @@ class LogDownProvider extends ServiceProvider implements DeferrableProvider
 
     public function register()
     {
-        Route::get('/logdown/list', function () {
-            return 'Olá, mundo!';
-        })->middleware('web');
+
     }
 
     public function boot()
@@ -23,5 +21,6 @@ class LogDownProvider extends ServiceProvider implements DeferrableProvider
 //        Route::get('/logdown/list', function () {
 //            return 'Olá, mundo!';
 //        })->middleware('web');
+        $this->loadRoutesFrom("./routes/web.php");
     }
 }
