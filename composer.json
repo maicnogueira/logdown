@@ -1,0 +1,14 @@
+{
+  "name": "maicnogueira/logdown",
+  "description": "apenas mais uma forma de baixar logs do laravel",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "maic",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+  }
+}
