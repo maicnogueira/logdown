@@ -11,7 +11,12 @@ class LogDownProvider extends ServiceProvider implements DeferrableProvider
 
     public function register()
     {
+        $this->registerConfig();
+    }
 
+    protected function registerConfig()
+    {
+        $this->mergeConfigFrom(__DIR__.'/config/logdown.php', 'logdown');
     }
 
     public function boot()
@@ -21,6 +26,6 @@ class LogDownProvider extends ServiceProvider implements DeferrableProvider
 //        Route::get('/logdown/list', function () {
 //            return 'Olá, mundo!';
 //        })->middleware('web');
-        $this->loadRoutesFrom("./routes/web.php");
+        $this->loadRoutesFrom(__DIR__."/routes/web.php");
     }
 }
