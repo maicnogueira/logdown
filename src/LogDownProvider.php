@@ -11,17 +11,15 @@ class LogDownProvider extends ServiceProvider implements DeferrableProvider
     public function boot()
     {
 
-        $this->app->singleton('logdown', function () {
-            return new LogDownProvider();
+        Route::get('/meu-pacote', function () {
+            return 'Olá, mundo!';
         });
 
     }
 
     public function register()
     {
-        Route::get('/meu-pacote', function () {
-            return 'Olá, mundo!';
-        });
+
 
     }
 
