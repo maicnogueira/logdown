@@ -6,10 +6,16 @@ namespace MaicNogueira\Logdown;
 class Search
 {
 
-    public function get()
+    public function listFiles()
     {
-        $texto = "teto";
-        echo file_put_contents("test.txt", $texto);
+//        $texto = "teto";
+//        echo file_put_contents("test.txt", $texto);
+        $pasta = "/storage/logs/";
+        $diretorio = dir($pasta);
+        while(($arquivo = $diretorio->read()) !== false) {
+            echo $arquivo."<br>";
+        }
+        $diretorio->close();
     }
 
 }
