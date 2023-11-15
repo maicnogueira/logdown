@@ -22,5 +22,15 @@
     "post-install": [
       "php artisan vendor:publish --provider=\"MaicNogueira\\Logdown\\Providers\\LogDownProvider\""
     ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MaicNogueira\\Logdown\\Providers\\LogDownProvider"
+      ],
+      "aliases": {
+        "LogDown": "MaicNogueira\\Logdown\\Providers\\LogDownProvider"
+      }
+    }
   }
 }
