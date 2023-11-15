@@ -27,10 +27,7 @@
     "laravel": {
       "providers": [
         "MaicNogueira\\Logdown\\LogDownProvider"
-      ],
-      "aliases": {
-        "LogDown": "MaicNogueira\\Logdown\\LogDownProvider"
-      }
+      ]
     }
   }
 }
