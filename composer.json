@@ -20,7 +20,7 @@
   },
   "scripts": {
     "post-install": [
-      "php artisan vendor:publish --provider=\\Logdown\\LogDownProvider\""
+      "php artisan vendor:publish --provider=\"\\Logdown\\LogDownProvider\""
     ]
   },
   "extra": {
