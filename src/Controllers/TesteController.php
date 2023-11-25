@@ -3,6 +3,7 @@
 
 namespace LogDown\Controllers;
 
+use Illuminate\Routing\Controller;
 
 class TesteController
 {
