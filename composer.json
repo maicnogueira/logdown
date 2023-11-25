@@ -17,13 +17,13 @@
   },
   "autoload" : {
     "psr-4" : {
-      "LogDown\\" :  "src/"
+      "maicnogueira\\LogDown\\" :  "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "LogDown\\LogDownProvider"
+        "maicnogueira\\LogDown\\LogDownProvider"
       ]
     }
   }
