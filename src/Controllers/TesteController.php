@@ -5,7 +5,7 @@ namespace LogDown\Controllers;
 
 use Illuminate\Routing\Controller;
 
-class TesteController
+class TesteController extends Controller
 {
     public function index()
     {
