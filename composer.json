@@ -2,6 +2,7 @@
   "name": "maicnogueira/logdown",
   "description": "apenas mais uma forma de baixar logs do laravel",
   "minimum-stability": "stable",
+  "type": "library",
   "version": "0.0.1",
   "license": "proprietary",
   "authors": [
@@ -15,13 +16,13 @@
   },
   "autoload" : {
     "psr-4" : {
-      "MaicNogueira\\LogDown\\" :  "src/"
+      "LogDown\\" :  "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "MaicNogueira\\LogDown\\LogDownProvider"
+        "LogDown\\LogDownProvider"
       ]
     }
   }
