@@ -5,6 +5,7 @@ namespace LogDown;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use LogDown\Controllers\TesteController;
 
 
 class LogDownProvider extends ServiceProvider implements DeferrableProvider
@@ -13,7 +14,7 @@ class LogDownProvider extends ServiceProvider implements DeferrableProvider
     {
         parent::boot();
         Route::middleware('web')
-            ->namespace('LogDown')
+            ->namespace(TesteController::class)
             ->group(function () {
                 $this->loadRoutesFrom(__DIR__.'/routes/web.php');
             });
