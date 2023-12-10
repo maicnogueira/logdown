@@ -4,4 +4,10 @@ use Illuminate\Support\Facades\Route;
 use LogDown\Controllers\TesteController;
 
 
-    Route::get('/minha-rota', TesteController::class.'@index');
+Route::middleware('web')
+    ->namespace(TesteController::class)
+    ->group(function () {
+        Route::get('/minha-rota', TesteController::class.'@index');
+    });
+
+
