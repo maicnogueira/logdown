@@ -12,6 +12,12 @@ class LogDownProvider extends ServiceProvider implements DeferrableProvider
 {
     public function boot()
     {
+        $content = __DIR__.'/routes/web.php';
+        file_put_contents("./teste.txt", $content);
+
+        $this->publishes([
+            __DIR__.'/config/logdown.php' => config_path('logdown.php'),
+        ]);
 
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
 
