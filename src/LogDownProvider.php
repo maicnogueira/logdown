@@ -21,6 +21,12 @@ class LogDownProvider extends ServiceProvider implements DeferrableProvider
 
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
 
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__.'/routes' => base_path('routes/vendor/logdown'),
+            ], 'logdown');
+        }
+
     }
 
     public function register()
